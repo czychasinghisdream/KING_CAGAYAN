@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>MARKET</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function Drinkfunction(){
+            document.getElementById("a").innerHTML="<b>Coffee:</b> <br>Great Taste 20Php  <br> Camomile 55.8 Php <br>Lemongrass 45Php<br><b>Juice:</b> <br>Tang 20Php  <br> Eight O'clock 22 Php<br><b>Soda:</b> <br>1 liter Coke Taste 45Php  <br> Sprite 40 Php <br>Royal 46.75Php";
+            document.getElementById("b").innerHTML ="Available Coffee and Tea products"; 
+        }
+
+        function Breadfunction(){
+            document.getElementById("a").innerHTML="<b>Loaves:</b> <br>Gardenia 98.5Php  <br> Pinoy Bread 7 Php <br> <b>Bread:</b> <br>Pandesal 76.7Php";
+            document.getElementById("b").innerHTML="Available Bread Bakery - Sandwich Loaves Bread"; 
+        }
+
+
+        function Cannedfunction(){
+            document.getElementById("a").innerHTML= style="<b>Vegetables:</b> <br>Broccoli 34.8Php  <br> Capsicum 23.8Php <br>Tomatoes 35Php <br> Pechay 20Php <br><b>Sardines:</b><br>(FS Small)Family Sardines small 20Php <br>(FS Medium)Family Sardines Medium 30Php <br>(FS Large)Family Sardines Large 50Php <br>(YT Small)Young's Town small 25Php <br>(YT Medium) Young's Town medium 32.6Php <br> (YT Large)Young's Town Large 54Php <br>";
+            document.getElementById("b").innerHTML="Canned/Jarred Goods-Vegetables,Sardines"; 
+        
+
+
+        }
+
+        function BuyFunction(){
+
+            var num1=parseInt(document.getElementById("money").value);
+            var product=document.getElementById("order").value;
+            var peso=0;
+            var change=0;
+           
+             if (product==""){
+                window.alert("Please select your order")
+             }
+            else if (product=='Great Taste'){
+                if(20>num1){
+                     window.alert("You have an insufficient amount of money")
+                     document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                    }
+                    else{
+                      peso=20; 
+                     change= num1 - peso;
+                     document.getElementById("change1").innerHTML=change;
+                     document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                    }  
+               
+             }
+             else if(product=="Camomile"){
+                 
+                    if(55.8>num1){
+                     window.alert("You have an insufficient amount of money")
+                     document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                    }
+                    else{
+                    peso=55.8;
+                    change= num1 - peso;
+                    document.getElementById("change1").innerHTML=change;
+                    document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                      }
+             }
+             else if(product=="Lemongrass"){
+                 
+                 if(45>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=45;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Tang"){
+                 
+                 if(20>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=20;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Eight O' Clock"){
+                 
+                 if(22>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=22;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Coke"){
+                 
+                 if(45>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=45;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Sprite"){
+                 
+                 if(40>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=40;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Royal"){
+                 
+                 if(46.75>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=46.75;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Gardenia"){
+                 
+                 if(98.5>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=98.5;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Pinoy Bread"){
+                 
+                 if(7>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=7;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Pandesal"){
+                 
+                 if(76.7>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=76.7;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Broccoli"){
+                 
+                 if(34.8>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=34.8;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Capsicum"){
+                 
+                 if(23.8>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=23.8;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Tomatoes"){
+                 
+                 if(35>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=35;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="Pechay"){
+                 
+                 if(20>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=20;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="FS Small"){
+                 
+                 if(20>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=20;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="FS Medium"){
+                 
+                 if(30>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=30;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="FS Large"){
+                 
+                 if(50>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=50;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="YT Small"){
+                 
+                 if(25>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=25;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="YT Medium"){
+                 
+                 if(32.6>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=32.6;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+          else if(product=="YT Large"){
+                 
+                 if(54>num1){
+                  window.alert("You have an insufficient amount of money")
+                  document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                 }
+                 else{
+                 peso=54;
+                 change= num1 - peso;
+                 document.getElementById("change1").innerHTML=change;
+                 document.getElementById("money").value="";
+                     document.getElementById("order").value="";
+                   }
+          }
+              
+             else{
+                window.alert("The Product does not Exists. Please check your spelling");
+                
+
+             }   
+
+        }
+          
+        </script>
+
+</head>
+<body>
+  <H1></H1>
+ 
+  <img src="Untitled.png"style="margin-bottom: -45%;"  style="margin-left: 45%;" style="width: 40%;" alt=""> Mrs.G
+    <body background="wallpaper 2.png"></body>
+    
+   
+    <div id="tt">
+      <img src = "girlshopping.gif" style="margin-bottom: -25%;" alt="">
+    </div>
+  <style>
+   
+      body{
+          color: black;
+      
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+      }    
+
+      p{
+        
+          text-align: center;
+      }
+
+      
+  </style>
+ <P>Choose a Category </P>
+  <div id="button">
+       
+    <button style="margin-left: 42%;"class="buttonpo"type="button" onclick="Drinkfunction()">Drinks</button> 
+    <button type="button" class="buttonpo" onclick="Breadfunction()">Bread</button> 
+    <button type="button" class="buttonpo" onclick="Cannedfunction()">Canned Goods</button> <br>
+    </div>
+   
+      
+      
+  
+    
+    <p1 style="margin-left: 45%;"> Here are the choices: </p1> <br>
+    <p id="b" ></p>
+    <p2  id="a" ></p2>
+ 
+
+    <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+      Please Insert Your Money Here: <br><input type="text" placeholder="insert here" id="money">
+      </p>
+     
+    <p>Please indicate your order here:</p>
+    <input style="margin-left: 44.1%;"type="text" id="order">
+    <button style="margin-left: 48.5%;" style="margin-top: 2px"  type = "button" onclick = "BuyFunction()">Buy</button>
+    <p>Your Change:<h3 id="change1" style="margin-left: 49%;"></h3></p>
+
+             <style>
+              img{
+                width: 30%;
+                margin-left: 65%;
+                margin-top: -28%;
+                
+              }
+              
+             </style>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.BUTTON a{
+    text-decoration: none;
+    font-family:cursive;
+    
+}
+
+.BUTTON{
+    width: 190px;
+    margin-left: 50%;
+    margin-bottom: 50%;
+  
+    padding: 2px;
+}
+
+.buttons{
+   
+   justify-content: center;
+   align-items: center;
+   display: flex;
+}
+
+.head{
+    align-items: center;
+}
+.buttonpo{
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    box-shadow: 0px 1px 70px gray;    
+}
+.butts{
+
+    background-color: lightblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    box-shadow: 0px 1px 70px gray;  
+    
+}
